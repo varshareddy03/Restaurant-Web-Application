@@ -1,0 +1,70 @@
+/*Styles for entire document */
+*{
+    font-family: font-family: 'Roboto Slab', serif;
+    padding :0;
+    margin :0;
+}
+
+/* header styles */
+header{
+    background-image: url(https://img.freepik.com/free-photo/horizontal-view-tomato-meatballs-soup-with-noodles-brown-bowl-different-spices-notebook-dark-background_140725-140752.jpg?w=2000);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+/*banner styles*/
+.banner{
+    display: inline;
+    position: absolute;
+    margin: 10px;
+    right: 0px;
+    bottom: -30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 4px solid black;
+    background-color: rgb(244, 190, 74);
+}
+
+/*styles for button of card*/
+.btn{
+    background-color: rgb(242, 209, 99);
+}
+
+.card-img{
+    object-fit: cover;
+}
+
+/* background for main content */
+.main{
+    background-image: url(https://media.istockphoto.com/photos/modern-restaurant-interior-design-picture-id1211547141?k=20&m=1211547141&s=612x612&w=0&h=KiZX3NBZVCK4MlSh4BJ8hZNSJcTIMbNSSV2yusw2NmM=);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+/*horizontal image*/
+#horizontal img{
+    border: 2px solid black;
+} 
+
+/*color for horizontal card*/
+.bg-color{
+    background-color: rgb(243, 207, 46);
+}
+
+/* Styles for footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(71, 67, 67);
+    color: antiquewhite;
+    padding: 10px;
+}
+
+footer img{
+    border-radius: 50%;
+    box-shadow: 0px 2px 7px yellow;
+}

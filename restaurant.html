@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!--Linking css file-->
+    <link rel="stylesheet" href="./restaurant.css">
+    <title>Restaurant app</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/logo.png" type="image/x-icon">
+
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/logo.png" width="70px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#">Restaurants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary" aria-current="page" href="#">Items</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--heading with a background image-->
+    <header>
+        <div class="content p-3">
+            <!--title-->
+            <div class="border rounded p-2 bg-white bg-opacity-25 ">
+                <h1 class="display-5 fw-semibold text-black text-end">Delicious Food <i class="fa-solid fa-utensils"></i></h1>
+                <p class="lead text-black fw-semibold text-end">Count the memories, not the calories. Enjoy a taste of heaven at our Restaurant <i class="fa-solid fa-bowl-food"></i></p>
+            </div>
+            <img src="https://industrytoday.com/wp-content/uploads/2019/01/restaurant-food.jpg" class=" mt-5 rounded-circle border border-3 d-none d-sm-block" width="260px" height="260px" alt="">
+            <!--banner-->
+            <div class="banner lead rounded text-black">
+                Hundreds of flavors under one roof
+            </div>
+    </header>
+
+    <!--Horizontal Card-->
+    <div class="mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4 p-0">
+                        <img id="horizontal img" src="https://assets.cntraveller.in/photos/6182a42236c22389b7a54bf8/master/pass/New%20BLR%20Res.%20lead%20Image.jpg" width="550px" alt="">
+                    </div>
+                    <div class="col-sm-8 bg-color ">
+                        <h3 class="mt-3 fs-1 fw-bold">About DQ's</h3>
+                        <p class="lead text-white fw-semibold">Established in 2000, our main aim is to serve the original flavourful delicacies. We currently have two branches. One in Jubilee
+                            Hills and the other in Gachibowli. With your love and support we are planning to expand across the city. 
+                            While you feast on our flavourful delicacies, you can club it with delicious drinks of your choice.Delicious, handcrafted beverages and great-tasting food. 
+                            The secret to making life better.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--List of food items-->
+    <div class="p-5 mt-5 main">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+            <!--food item 1-->
+            <div class="column">
+                <div class="card  ">
+                    <img src="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/item-12.jpeg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Egg   Sandwich</h1>
+                        <p>Scrambled eggs, sliced boiled eggs and egg salad (a mix of chopped cooked egg, veggies, cheese and mayonnaise).</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content1" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content1">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Cheese</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Butter</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Tomato Mayo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 2-->
+            <div class="column">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/item-4.jpeg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Chicken Biryani</h1>
+                        <p>A savory chicken and rice dish that includes layers of chicken, rice, and aromatics that are steamed together. </p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content2" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content2">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Salad</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Ghee</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Raitha</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 3-->
+            <div class="column">
+                <div class="card ">
+                    <img src="https://food-images.files.bbci.co.uk/food/recipes/quesadillaswithbarbe_1047_16x9.jpg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Vegetable Wrap</h1>
+                        <p>Whole wheat roti stuffed with lightly cooked veggies like carrots, tomatoes, potatoes, onions and butter lettuce.</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content3" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Cheese</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Butter</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Tomato Mayo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 4-->
+            <div class="column">
+                <div class="card">
+                    <img src="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/7.jpeg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Grilled Chicken</h1>
+                        <p>Chicken meat cooked on grill consisting of strong indigenous flavors. Served with mint chutney and chillies.</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content4" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content4">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Mint Chutney</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Ketchup</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Tomato Mayo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 5-->
+            <div class="column">
+                <div class="card ">
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Brewed Espresso</h1>
+                        <p>A type of coffee made with espresso and milk that has been frothed up with pressurized steam.</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content5" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content5">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Vanilla</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Cinnamon Dolce</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Hazelnut</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Gingerbread</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 6-->
+            <div class="column">
+                <div class="card">
+                    <img src="https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Tandoori Pizza</h1>
+                        <p>Pizza with a topping of tomatoes, cheese and paneer typically with added meat, fish, or vegetables.</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content6" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content6">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Cheese</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Ketchup</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Tomato Mayo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 7-->
+            <div class="column">
+                <div class="card">
+                    <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Neha_Mathur/Achari_Paneer_Tikka_Recipe_Party_Food_400.jpg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Paneer Tikka</h1>
+                        <p>Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor.</p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content7" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content7">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Cheese</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Butter</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Veggies</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Tomato Mayo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--food item 8-->
+            <div class="column">
+                <div class="card ">
+                    <img src="https://assets.epicurious.com/photos/60637186ceabd6ae3d2ebc7f/4:3/w_4136,h_3102,c_limit/CrispyWaffles_HERO_v2_032521_12048_JD_final.jpg" width="100%" height="225px" alt="">
+                    <div class="card-body text-center">
+                        <h1 class="">Honey Waffle</h1>
+                        <p>A thin layer of honey infused with delicious cinnamon sandwiched between two thin waffles. </p>
+                        <button class="btn p-2 px-4 fw-semibold" data-bs-target="#content8" data-bs-toggle="collapse">Customize</button>
+                        <!--Content to collapse-->
+                        <div class="collapse" id="content8">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                <a class="nav-link active" href="#">Honey</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Maple Syrup</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Butter</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link">Chocolate Syrup</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+
+    <!--Carousel items-->
+    <div class="carousel slide mb-3 d-none d-sm-block" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1200" >
+                <img src="https://media.istockphoto.com/photos/two-meat-plate-with-salad-leaves-and-summer-salad-in-waiters-hand-picture-id1160577908?k=20&m=1160577908&s=612x612&w=0&h=l3raqdb03_Ky8gOWlv62BrV2thbo-lo8py39wfud0Mw=" class="d-block mx-auto" width="600px" height="400px" alt="">
+            </div>
+            <div class="carousel-item " data-bs-interval="1600" >
+                <img src="https://www.foodbusinessnews.net/ext/resources/2020/4/CoupleAtRestaurant_Lead.jpg?t=1587991293&width=1080" class="d-block mx-auto" width="600px" height="400px" alt="">
+            </div>
+            <div class="carousel-item " data-bs-interval="1600" >
+                <img src="https://i.pinimg.com/564x/f0/77/a5/f077a520ee8627ecce1eb3d50edb16c2.jpg" class="d-block mx-auto" width="600px" height="400px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer of the page-->
+    <footer>
+        <div class="address">
+            <p><i class="fa-solid fa-location-pin"></i> Jubilee Hills</p>
+            <p><i class="fa-solid fa-phone"></i> Ph:9988556677</p>
+            <h4><i class="fa-solid fa-city"></i> Hyderabad</h4>
+            <h4>Telangana</h4>
+        </div>
+        <div class="d-none d-sm-block">
+            <img src="https://raw.githubusercontent.com/rajeshThappeta/restaurentapp/d70c15664eb0804cb4759105e65b8bdf6cf72b05/images/footer.svg" width="200px" alt="">
+        </div>
+        <div class="address">
+            <p><i class="fa-solid fa-location-pin"></i> Gachibowli</p>
+            <p><i class="fa-solid fa-phone"></i> Ph:9911772289</p>
+            <h4><i class="fa-solid fa-city"></i> Hyderabad</h4>
+            <h4>Telangana</h4>
+        </div>
+    </footer>
+ 
+    
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
